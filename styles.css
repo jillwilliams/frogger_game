@@ -51,7 +51,6 @@ body {
     border: 2px #4ade80 solid;
 }
 
-/*  */
 .container {
     border: 4px solid #444;
     border-radius: 8px;
@@ -68,7 +67,6 @@ body {
     font-size: 20px;
 }
 
-
 .home-base {
     width: 90px;
     height: 90px;
@@ -78,7 +76,6 @@ body {
     font-weight: bold;
     letter-spacing: 10px;
     margin: 0px auto;
-    
 }
 
 .clear-field {
@@ -101,7 +98,6 @@ body {
     letter-spacing: 10px;
     margin: 0px auto;
 }
-
 
 .home-base {
     background-color: red;
@@ -139,7 +135,6 @@ body {
     background-color: darkgray;
     height: 155px; /* 2 lanes */
     margin-top: -5px;
-
 }
 
 /* Scrolling Lanes */
@@ -195,15 +190,14 @@ body {
     position: absolute;
     width: 90px;
     height: 90px;
-    left: 4205px;
+    left: 420px;
     top: 718px;
     z-index: 10;
     transition: top 0.08s, left 0.08s;
     object-fit: cover;
 }
 
-/* ---------------------------------------------------------------- */
-/* Obstacles (Styled so they work with or without images) */
+/* Obstacles */ 
 .log {
     width: 145px;
     height: 60px;
@@ -217,14 +211,23 @@ body {
 .car, .car-two {
     width: 102px;
     height: 50px;
-    /* background-color: #ef4444; */
-    /* border-radius: 6px; */
     display: inline-block;
     object-fit: cover;
 }
 
-/* Different colors for CSS fallback cars
-img[src*="bluecar"] { background-color: #3b82f6; }
-img[src*="redcar"] { background-color: #ef4444; }
-img[src*="tealcar"] { background-color: #14b8a6; }
-img[src*="yellowcar"] { background-color: #eab308; } */
+@media screen and (max-width: 768px) {
+    .gameboard {
+        position: relative;
+        width: 700px;
+        height: 800px;
+    }
+    /* Player Frog */
+    .frog {
+        position: absolute;
+        left: 418px;
+        top: 718px;
+        margin-left: -113px;
+    }
+
+}
+
