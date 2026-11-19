@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" Unicode="U+1F334, UTF-8: F0 9F 8C B4" Unicode= "U+1F332, UTF-8: F0 9F 8C B2" Unicode= "U+00A9"  Unicode="U+00A9, UTF-8: C2 A9" Unicode="U+1F440, UTF-8: F0 9F 91 80">
+    <title>Frogger</title>
+    <link HREF="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Shadows+Into+Light|Fresca|Nunito|Yoyu|Iceland|Arial|Yeseva One|Tagesschrift|du+NSW+ACT+Cursive|BenchNine|Birthstone|Jolly Lodger|Nosifer|Quicksand|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="./styles2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/9f71dab2a2.js" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/> -->
+
+    <!-- <meta name="keywords" content="”> -->
+</head>
+<body>
+    <div class="title">FROGGER</div>
+    <div class="hud">
+        <div>SCORE: <span id="score">0</span></div>
+        <div>LIVES: <span id="lives">3</span></div>
+    </div>
+    <button class="start-button">START GAME</button>
+
+    <div class="container">
+        <div class="gameboard">
+        <!-- Row 0: Home -->
+        <div class="home-base">HOME</div>
+        <!-- Row 1: Safe Zone -->
+        <div class="clear-field"></div>
+
+        <!-- Rows 2 & 3: River -->
+        <div class="lazy-river">
+            <div class="banner-container">
+            <div class="banner-track">
+                <div class="banner-content">
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                </div>
+                <div class="banner-content" aria-hidden="true">
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                </div>
+            </div>
+            </div>
+
+            <div class="banner-container-two">
+            <div class="banner-track-two">
+                <div class="banner-content-two">
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                </div>
+                <div class="banner-content-two" aria-hidden="true">
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                <span><img src="images/log.png" alt="" class="log" id="obstacle"></span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Row 4: Safe Zone -->
+        <div class="clear-field"></div>
+
+        <!-- Rows 5 & 6: Roadway -->
+        <div class="roadway">
+            <div class="banner-container">
+            <div class="banner-track">
+                <div class="banner-content">
+                <span><img src="images/bluecar.png" alt="" class="car" id="obstacle"></span>
+                <span><img src="images/redcar.png" alt="" class="car" id="obstacle"></span>
+                <span><img src="images/tealcar.png" alt="" class="car" id="obstacle"></span>
+                <span><img src="images/yellowcar.png" alt="" class="car" id="obstacle"></span>
+                </div>
+                <div class="banner-content" aria-hidden="true">
+                <span><img src="images/bluecar.png" alt="" class="car" id="obstacle"></span>
+                <span><img src="images/redcar.png" alt="" class="car" id="obstacle"></span>
+                <span><img src="images/tealcar.png" alt="" class="car" id="obstacle"></span>
+                <span><img src="images/yellowcar.png" alt="" class="car" id="obstacle"></span>
+                </div>
+            </div>
+            </div>
+
+            <div class="banner-container-two">
+            <div class="banner-track-two">
+                <div class="banner-content-two">
+                <span><img src="images/yellowcar.png" alt="" class="car-two" id="obstacle"></span>
+                <span><img src="images/bluecar.png" alt="" class="car-two" id="obstacle"></span>
+                <span><img src="images/tealcar.png" alt="" class="car-two" id="obstacle"></span>
+                <span><img src="images/redcar.png" alt="" class="car-two" id="obstacle"></span>
+                </div>
+                <div class="banner-content-two" aria-hidden="true">
+                <span><img src="images/yellowcar.png" alt="" class="car-two" id="obstacle"></span>
+                <span><img src="images/bluecar.png" alt="" class="car-two" id="obstacle"></span>
+                <span><img src="images/tealcar.png" alt="" class="car-two" id="obstacle"></span>
+                <span><img src="images/redcar.png" alt="" class="car-two" id="obstacle"></span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Row 7: Start -->
+        <div class="start-base">START</div>
+        <img src="images/frog.png" alt="" class="frog">
+        </div>
+    </div>
+    <script src="app2.js"></script>
+</body>
+</html>
