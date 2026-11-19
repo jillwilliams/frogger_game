@@ -51,7 +51,7 @@ startBtn.addEventListener('click', () => {
 document.addEventListener('keydown', (e) => {
     if (!isPlaying) return;
     if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
-    e.preventDefault(); // Prevent page scrolling
+    e.preventDefault(); 
     }
     switch (e.key) {
         case 'ArrowUp':
@@ -71,7 +71,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 
-// Helper for bounding box collisions
+
 function isColliding(rect1, rect2, padding = 2) {
     return !(
         rect1.right - padding < rect2.left + padding ||
@@ -101,7 +101,6 @@ function gameLoop() {
     // 1. Check Win Condition (Reached Home Base at top)
     if (frogY < 50) {
         score += 100;
-        lives++;
         scoreEl.textContent = score;
     resetFrog();
 }
